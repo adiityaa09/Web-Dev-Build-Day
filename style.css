@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+nav {
+    background-color: #15632e;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color:black;
+}
+
+.Tool-Cont {
+    display: flex;
+    gap: 15px;
+}
+
+.Tool-Cont div {
+    width: 40px;
+    height: 40px;
+    background-color: #130202;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.Tool-Cont div:hover {
+    background-color: #0b0101;
+    transform: scale(1.1);
+}
+
+.Task-Cont {
+    margin: 20px auto;
+    background-color: #2b2824;
+    padding: 20px;
+    border: 1px solid #1af68c;
+    border-radius: 12px;
+    display: none;
+    gap: 15px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.task-area {
+    flex: 1;
+    min-height: 70px;
+    border: 2px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #b6c1b9;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.task-area:focus {
+    border-color: #2196f3;
+}
+
+
+.Create-Ticket {
+    margin-top: 10px;        
+    width: 40px;
+    height: 40px;
+    background-color: #21f352; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;       
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.Create-Ticket:hover {
+    background-color: #537ba2;
+    transform: scale(1.1);
+}
+
+
+.ticket {
+    background-color: #897cd3;
+    border: 2px solid #f0c14b;
+    padding: 12px;
+    margin: 12px;
+    width: 260px;
+    border-radius: 12px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ticket:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
+.ticket-done {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+.ticket-done:hover {
+    background-color: #45a049;
+    transform: scale(1.2);
+}
+
+/* Style when ticket is completed */
+.completed {
+    background-color: #c8f7c5;   /* light green */
+    text-decoration: line-through;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
